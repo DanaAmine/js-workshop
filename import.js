@@ -1,4 +1,4 @@
 const {amine} = require("./async")
 
 
-amine("aziz")
+amine("azz")
