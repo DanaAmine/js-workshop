@@ -3,7 +3,7 @@
 // Import required modules
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); // middleware pour copier les donnees
 
 // Create Express app
 const app = express();
