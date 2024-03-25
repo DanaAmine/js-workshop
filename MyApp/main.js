@@ -1,21 +1,13 @@
 const express = require('express');
 const app = express();
+const Routes = require('./MyAppRoutes/routes');
 
 // Middleware to parse JSON bodies
 app.use(express.json());
 
 // Route handler for GET request
-app.get('/', (req, res) => {
-    res.send('GET request received');
-    console.log("running from maroua");
-    
-});
+app.use('/', Routes);
 
-// Route handler for POST request
-app.post('/', (req, res) => {
-    console.log('POST body:', req.body);
-    res.send('POST request received');
-});
 
 // Start the server
 const port = process.env.PORT || 3000;
